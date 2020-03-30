@@ -29,4 +29,8 @@ Route::get('/', function () {
 /*Route::get('/', function (){
     return view('index');
 });*/
-Route::get('/', 'IndexController@index');
+Route::get('/', 'HomeController@index');
+
+Route::get('/html', 'LessonsController@indexHtml');
+Route::get('/javaScript', 'LessonsController@indexJs');
+Route::get('/css', 'LessonsController@indexCss');
