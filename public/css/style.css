@@ -5,13 +5,18 @@
 .header_main {
     position: relative;
     z-index: 9999;
-    margin: 0 auto;
+    margin: 0 auto -1em auto;
     background: #fff;
     padding: 1.5em 5.5% 1.25em;
     -webkit-transition: padding .3s ease;
     transition: padding .3s ease;
     display: flex;
     /*position: fixed;*/
+}
+
+.fumec_logo {
+    width: 100px;
+    height: 100px;
 }
 
 .menu {
@@ -48,9 +53,12 @@
     color: #0597F2;
 }
 
-.fumec_logo {
-    width: 100px;
-    height: 100px;
+.section_nav_left {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    width: 8em;
+    margin-top: -12em;
 }
 
 
@@ -66,6 +74,8 @@ header {}
 
 /* Color Theme Swatches in Hex */
 
+
+/*
 .Moda-1-hex {
     color: #D9B0CA;
 }
@@ -85,10 +95,13 @@ header {}
 .Moda-5-hex {
     color: #012326;
 }
+*/
 
 
 /* Color Theme Swatches in RGBA */
 
+
+/*
 .Moda-1-rgba {
     color: rgba(216, 175, 202, 1);
 }
@@ -108,10 +121,13 @@ header {}
 .Moda-5-rgba {
     color: rgba(0, 34, 38, 1);
 }
+*/
 
 
 /* Color Theme Swatches in HSLA */
 
+
+/*
 .Moda-1-hsla {
     color: hsla(320, 34, 76, 1);
 }
@@ -131,3 +147,4 @@ header {}
 .Moda-5-hsla {
     color: hsla(185, 96, 7, 1);
 }
+*/

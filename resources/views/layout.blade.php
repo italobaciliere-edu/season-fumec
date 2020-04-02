@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}"> <!-- Import css file -->
-    <title>@yield('title')</title>
+    <title>@yield('title')</title>    
 </head>
 
 <body>
@@ -29,7 +29,15 @@
         <!-- Menu de navegação -->
     </header>
 
-    <main class="simetria">
+    <section class="section_nav_left">
+        <nav>
+            <ul id=menu>
+                @yield('navegação lateral')
+            </ul>
+        </nav>
+    </section>
+
+    <main class="header_main simetria">
         <div class="container">
             <!-- Lista de Linguagens -->
             <div class=" jumbotron">
@@ -38,6 +46,14 @@
             @yield('conteudo')
         </div>
     </main>
+
+    <!-- Jquery script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Modo de importar um arquivo js da pasta public no Laravel -->
+    <!-- Import Imputmask JS lib -->
+    <script src="{{ asset('Inputmask/dist/jquery.inputmask.js') }}"></script>
+    @yield('scripts')
+
 </body>
 
 </html>
